@@ -61,6 +61,6 @@ FROM employees
 JOIN departments ON employees.department_id = departments.id;
 
 -- 40
-SELECT locations.city, departments.department_name FROM departments
-JOIN locations ON departments.location_id = locations.id
+SELECT locations.city, departments.department_name FROM locations
+LEFT JOIN departments ON departments.location_id = locations.id
 ORDER BY city ASC;
