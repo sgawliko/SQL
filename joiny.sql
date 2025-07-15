@@ -18,7 +18,7 @@ ON departments.location_id = locations.id;
 
 --  2. Wyświetl nazwę wszystkich działów oraz nazwę miast, w których znajdują
 --  się dane działy. Rekordy sortuj alfabetycznie po kolumnie miasto.
-
+ 
 SELECT departments.department_name, locations.city
 FROM departments
 INNER JOIN locations
